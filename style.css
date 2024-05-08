@@ -1,0 +1,216 @@
+/**
+ * Theme Name: Nextawards Child
+ * Template:   nextawards
+ */
+
+/* ------------------------------------------------------------------------- *
+/* 1 Base */
+/* ------------------------------------------------------------------------- */
+
+:root { 
+   --site-bg: #E4E4E4; 
+   --site-text-color: #000; 
+   --link-color: #ff0000; 
+   --link-color-hover: #105862; 
+}
+
+/* Link color */
+.menu li a {
+   color: var(--link-color);;
+   font-weight: bolder;
+   font-size: 18px;
+}
+
+/* ------------------------------------------------------------------------- *
+/* 2 Layout */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- *
+/* 2.1 Menu */
+/* ------------------------------------------------------------------------- */
+
+@media (max-width: 1190px) {
+  .menu {
+     transform: translateX(-110%);
+  }
+}
+
+@media (max-width: 794px) {
+  .spacer {
+    height: 80px;
+  }
+}
+
+/* ------------------------------------------------------------------------- *
+/* 2.2 Home */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- *
+/* 2.3 Index */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- *
+/* 2.4 Sections */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- *
+/* 2.5 Header */
+/* ------------------------------------------------------------------------- */
+
+.header {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  border-radius: 10px;
+  width: auto;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border: 1px solid orange;
+}
+
+.header__content {
+  border-bottom: 0;
+}
+
+.header__logo-img {
+  width: 140px;
+  height: auto;
+  position: absolute;
+}
+
+@media (max-width: 1190px) {
+  .header__logo-img {
+     width: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__content {
+     padding-right: 0;
+     height: 59px;
+  }
+
+  .header .menu li {
+    text-align: center;
+  }
+}
+
+/* ------------------------------------------------------------------------- *
+/* 2.6 Footer */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- *
+/* 3 Modules */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- *
+/* 4 WordPress Default Element */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- *
+/* 5 Helpers  */
+/* ------------------------------------------------------------------------- */
+
+.frame {
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.582);
+}
+
+.disabled {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .wrapper.load,
+  .col-70,
+  .alignwide,
+  .alignfull {
+    padding: 0;
+  }
+
+  .frame {
+    box-shadow: none;
+  }
+
+  .logo-whats-app {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* ------------------------------------------------------------------------- *
+/* 6 reCAPTCHA  */
+/* ------------------------------------------------------------------------- */
+
+.grecaptcha-badge { visibility: hidden; }
+
+/* ------------------------------------------------------------------------- *
+/* WP CONTACT FORM 7  */
+/* ------------------------------------------------------------------------- */
+
+.wpcf7 {
+  border: 1px solid red;
+  padding: 50px 80px;
+}
+
+.wpcf7 form input,
+.wpcf7 form textarea {
+  border-radius: 20px;
+}
+
+.wpcf7 form {
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.wpcf7 form > p:nth-of-type(1) {
+  grid-column: 1 / -1; /* Estende l'elemento dalla prima all'ultima colonna */
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.wpcf7 form > p:nth-of-type(2) {
+  grid-column: 1 / 2;
+}
+
+.wpcf7 form > p:nth-of-type(6) {
+  grid-column: 1 / -1;
+}
+
+.wpcf7 form > p:nth-of-type(7) {
+  grid-column: 1 / -1;
+}
+.wpcf7 form > p:nth-of-type(8) {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+
+  .wpcf7 {
+    padding: 0 20px;
+  }
+  
+  .wpcf7 form {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+
+
+
+
+
+
