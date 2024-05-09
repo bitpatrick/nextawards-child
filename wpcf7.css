@@ -1,0 +1,87 @@
+/* ------------------------------------------------------------------------- *
+/* reCAPTCHA  */
+/* ------------------------------------------------------------------------- */
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+/* ------------------------------------------------------------------------- *
+/* WP CONTACT FORM 7  */
+/* ------------------------------------------------------------------------- */
+
+.wpcf7 {
+    padding: 50px 80px;
+}
+
+.wpcf7 form input,
+.wpcf7 form textarea {
+    border-radius: 20px;
+}
+
+.wpcf7 form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.wpcf7 form> :is(h1, h2, h3, h4, h5, h6) {
+    grid-column: 1 / -1;
+    /* Estende l'elemento dalla prima all'ultima colonna */
+    text-align: center;
+}
+
+.wpcf7 form>p:has(.wpcf7-name) {
+    grid-column: 1 / 2;
+}
+
+.wpcf7 form>p:has(.wpcf7-surname) {
+    grid-column: 2 / 2;
+}
+
+.wpcf7 form>p:has(.wpcf7-email) {
+    grid-column: 1 / 2;
+}
+
+.wpcf7 form>p:has(.wpcf7-tel) {
+    grid-column: 2 / 2;
+}
+
+.wpcf7 form>p:has(.wpcf7-msg) {
+    grid-column: 1 / -1;
+}
+
+.wpcf7 form>p:has(.wpcf7-privacy) {
+    grid-column: 1 / -1;
+}
+
+.wpcf7 form>p:has(input[type="submit"]) {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .wpcf7 {
+        padding: 0 20px;
+    }
+
+    .wpcf7 form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+}

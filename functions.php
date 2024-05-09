@@ -126,6 +126,7 @@ function nextawards_parent_enqueue_styles()
 
     //  load the active theme’s stylesheet after parent theme's stylesheet
     wp_enqueue_style('nextawards-child', get_stylesheet_uri(), array('nextawards'));
+    wp_enqueue_style('wpcf7', get_stylesheet_directory_uri() . '/wpcf7.css', array(), '1.0.0', 'all');
 
     // load js
     wp_enqueue_script('my-custom-script', get_stylesheet_directory_uri() . '/my-custom-script.js', array(), false, true);
